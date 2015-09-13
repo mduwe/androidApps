@@ -1,6 +1,18 @@
 <resources>
     <string name="app_name">dglSolver</string>
 
-    <string name="hello_world">Hello world!</string>
+    <string name="numSolve">Numerical Solving</string>
+    <string name="symSolve">Symbolic Solving</string>
+    <string name="options">Options</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="headbar">Ordinary Differential Equation Solver</string>
+
     <string name="action_settings">Settings</string>
+
+    <string name="title_activity_frm_num_solver">frm_numSolver</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>
