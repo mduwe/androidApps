@@ -5,7 +5,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class Main extends AppCompatActivity {
+
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,4 +35,5 @@ public class Main extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
 }
