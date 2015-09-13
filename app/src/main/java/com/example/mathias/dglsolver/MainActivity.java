@@ -17,7 +17,7 @@ import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
-
+import android.content.Intent;
 
 public class MainActivity extends Activity
         implements NavigationDrawerFragment.NavigationDrawerCallbacks {
@@ -52,14 +52,14 @@ public class MainActivity extends Activity
         // update the main content by replacing fragments
         FragmentManager fragmentManager = getFragmentManager();
         fragmentManager.beginTransaction()
-                .replace(R.id.container, PlaceholderFragment.newInstance(position + 1))
+                .replace(R.id.containermainmenu, PlaceholderFragment.newInstance(position + 1))
                 .commit();
     }
 
     public void onSectionAttached(int number) {
         switch (number) {
             case 1:
-                mTitle = getString(R.string.numSolve); //hier die solver ?
+                mTitle = getString(R.string.numSolve);
                 break;
             case 2:
                 mTitle = getString(R.string.symSolve);
@@ -90,7 +90,10 @@ public class MainActivity extends Activity
         }
         return super.onCreateOptionsMenu(menu);
     }
-
+    public void showFrmNumSolve(View view){
+        Intent intent = new Intent(this, numerical_solve.class);
+        startActivity(intent);
+    }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will

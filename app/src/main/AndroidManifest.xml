@@ -18,10 +18,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".frm_numSolver"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/title_activity_frm_num_solver"
-            android:theme="@style/FullscreenTheme" >
+            android:name=".numerical_solve"
+            android:label="@string/title_activity_numerical_solve"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mathias.dglsolver.MainActivity" />
         </activity>
     </application>
 
